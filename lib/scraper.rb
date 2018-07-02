@@ -14,6 +14,11 @@ class Scraper
     get_page.css("#hero")
   end
 
+  def make_courses 
+    get_courses.each do |x|
+      x = Course.new
+    end
+  end
 
     def print_courses
     self.make_courses
