@@ -19,6 +19,7 @@ class Scraper
       x = Course.new
       x.title = get_courses.css("h2").text
       x.schedule =  get_courses.css("date").text
+      x.description = get_courses.css("p").text
     end
   end
 
