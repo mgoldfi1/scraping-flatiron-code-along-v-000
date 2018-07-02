@@ -11,6 +11,7 @@ class Scraper
   end
 
   def get_courses
+    get_page.css("#hero")
   end
 
 
